@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Receitas</string>
+    <string name="title_activity_login">Receitas - Entrar</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="ok">Ok</string>
+    <string name="api_error">Serviço indisponível</string>
+    <string name="prompt_login">Login</string>
+    <string name="prompt_name">Nome</string>
+    <string name="prompt_recipe_name">Nome da Receita</string>
+    <string name="prompt_password">Senha</string>
+    <string name="prompt_repassword">Repetir Senha</string>
+    <string name="prompt_ingredients">Ingredientes</string>
+    <string name="prompt_ingredient">Ingrediente</string>
+    <string name="prompt_directions">Modo de Preparo</string>
+    <string name="prompt_qtde">Qtde</string>
+    <string name="action_add_ingredient">Adicionar Ingrediente</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_edit">Alterar</string>
+    <string name="action_delete">Excluir</string>
+    <string name="action_back">Voltar</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_registry">Registrar-se</string>
+    <string name="wrong_password">Senha incorreta!</string>
+    <string name="question_api_off">Serviço não está respondendo. Deseja continuar mesmo assim?</string>
+    <string name="question_confirme_delete">Confirma a exclusão desta receita?</string>
+    <string name="prompt_recipe_filter">Buscar Receita</string>
+    <string name="prompt_developer">Desenvolvedor</string>
+    <string name="prompt_version">Versão 1.0</string>
+    <string name="registry_error">O usuário não pode ser registro, talvez o login já tenha sido registrado!</string>
+</resources>

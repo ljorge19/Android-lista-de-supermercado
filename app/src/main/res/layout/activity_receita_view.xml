@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ReceitaViewActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvReceitaNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                tools:text="Modelo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingredientes"
+                android:textColor="@color/textColor"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:text="@string/prompt_ingredients" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvIngredientes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_directions"
+                android:textColor="@color/textColor"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:text="Modo de Preparo" />
+
+            <TextView
+                android:id="@+id/tvReceitaPreparo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                android:inputType="textMultiLine"
+                tools:text="Bata todos os ingredientes na batedeira, leve ao forno por 30 minutos a 180 graus.Bata todos os ingredientes na batedeira, leve ao forno por 30 minutos a 180 graus." />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btVoltar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_back" />
+                <Button
+                    android:id="@+id/btExcluir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_delete" />
+                <Button
+                    android:id="@+id/btEditar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_edit" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
