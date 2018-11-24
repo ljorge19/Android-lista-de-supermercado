@@ -1,9 +1,9 @@
-package br.agner.receitas.utils
+package br.leandro.lista.utils
 
 import android.app.AlertDialog
 import android.content.Context
 import android.content.DialogInterface
-import br.agner.receitas.R
+import br.leandro.lista.R
 
 class MyDialog {
 

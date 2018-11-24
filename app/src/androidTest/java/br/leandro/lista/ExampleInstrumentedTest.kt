@@ -1,4 +1,4 @@
-package br.agner.receitas
+package br.leandro.lista
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("br.agner.receitas", appContext.packageName)
+        assertEquals("br.leandro.lista", appContext.packageName)
     }
 }

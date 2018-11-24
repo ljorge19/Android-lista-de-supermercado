@@ -27,7 +27,7 @@
     <string name="question_confirme_delete">Confirma a exclusão desta receita?</string>
     <string name="prompt_recipe_filter">Search Recipe</string>
     <string name="prompt_developer">Developer</string>
-    <string name="prompt_developer_name">Agner Munhoz</string>
+    <string name="prompt_developer_name">Leandro Jorge</string>
     <string name="prompt_version">Version 1.0</string>
     <string name="registry_error">User can\'t be registered, maybe login was already registered!</string>
 </resources>

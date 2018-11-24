@@ -1,4 +1,4 @@
-package br.agner.receitas.ui
+package br.leandro.lista.ui
 
 import android.app.AlertDialog
 import android.content.Intent
@@ -7,9 +7,10 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.animation.AnimationUtils
-import br.agner.receitas.R
-import br.agner.receitas.api.HealthAPI
-import br.agner.receitas.api.RetrofitClient
+import br.leandro.lista.ui.LoginActivity
+import br.leandro.lista.R
+import br.leandro.lista.api.HealthAPI
+import br.leandro.lista.api.RetrofitClient
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {

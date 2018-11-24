@@ -1,12 +1,12 @@
-package br.agner.receitas.ui.adapter
+package br.leandro.lista.ui.adapter
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import br.agner.receitas.R
-import br.agner.receitas.model.Ingrediente
+import br.leandro.lista.R
+import br.leandro.lista.model.Ingrediente
 import kotlinx.android.synthetic.main.item_ingrediente_form.view.*
 
 class ListaIngredientesFormAdapter(private val ingredientes: List<Ingrediente>,

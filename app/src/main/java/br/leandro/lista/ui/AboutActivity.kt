@@ -1,8 +1,8 @@
-package br.agner.receitas.ui
+package br.leandro.lista.ui
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import br.agner.receitas.R
+import br.leandro.lista.R
 
 class AboutActivity : AppCompatActivity() {
 

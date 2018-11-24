@@ -1,4 +1,4 @@
-package br.agner.receitas
+package br.leandro.lista
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package br.agner.receitas.ui.adapter
+package br.leandro.lista.ui.adapter
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
@@ -6,11 +6,11 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import br.agner.receitas.R
-import br.agner.receitas.model.Receita
+import br.leandro.lista.R
+import br.leandro.lista.model.Receita
 import kotlinx.android.synthetic.main.item_receita.view.*
 import android.content.Intent
-import br.agner.receitas.ui.ReceitaViewActivity
+import br.leandro.lista.ui.ReceitaViewActivity
 
 
 class ListaReceitasAdapter(private val receitas: List<Receita>,

@@ -1,4 +1,4 @@
-package br.agner.receitas.ui
+package br.leandro.lista.ui
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -6,13 +6,13 @@ import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
 import android.view.View
-import br.agner.receitas.R
-import br.agner.receitas.api.ReceitaAPI
-import br.agner.receitas.api.RetrofitClient
-import br.agner.receitas.model.Ingrediente
-import br.agner.receitas.model.Receita
-import br.agner.receitas.model.User
-import br.agner.receitas.ui.adapter.ListaReceitasAdapter
+import br.leandro.lista.R
+import br.leandro.lista.api.ReceitaAPI
+import br.leandro.lista.api.RetrofitClient
+import br.leandro.lista.model.Ingrediente
+import br.leandro.lista.model.Receita
+import br.leandro.lista.model.User
+import br.leandro.lista.ui.adapter.ListaReceitasAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.error.*
 import kotlinx.android.synthetic.main.loading.*

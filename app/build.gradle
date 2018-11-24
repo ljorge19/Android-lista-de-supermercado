@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "br.leandro.receitas"
+        applicationId "br.leandro.lista"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1

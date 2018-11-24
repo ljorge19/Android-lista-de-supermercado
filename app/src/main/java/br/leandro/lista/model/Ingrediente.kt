@@ -1,4 +1,4 @@
-package br.agner.receitas.model
+package br.leandro.lista.model
 
 import java.io.Serializable
 

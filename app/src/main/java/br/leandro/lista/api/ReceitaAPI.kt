@@ -1,6 +1,6 @@
-package br.agner.receitas.api
+package br.leandro.lista.api
 
-import br.agner.receitas.model.Receita
+import br.leandro.lista.model.Receita
 import retrofit2.Call
 import retrofit2.http.*
 

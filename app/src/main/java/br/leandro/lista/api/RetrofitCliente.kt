@@ -1,4 +1,4 @@
-package br.agner.receitas.api
+package br.leandro.lista.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

@@ -1,14 +1,14 @@
-package br.agner.receitas.ui
+package br.leandro.lista.ui
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import br.agner.receitas.R
-import br.agner.receitas.api.RetrofitClient
-import br.agner.receitas.api.UserAPI
-import br.agner.receitas.model.User
-import br.agner.receitas.utils.MyDialog
+import br.leandro.lista.R
+import br.leandro.lista.api.RetrofitClient
+import br.leandro.lista.api.UserAPI
+import br.leandro.lista.model.User
+import br.leandro.lista.utils.MyDialog
 import kotlinx.android.synthetic.main.activity_registry.*
 import retrofit2.Call
 import retrofit2.Callback
