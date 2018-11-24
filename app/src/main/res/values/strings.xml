@@ -1,20 +1,20 @@
 <resources>
     <string name="app_name">Lista de supermercado</string>
-    <string name="title_activity_login">Recipes - Sign in</string>
+    <string name="title_activity_login">Products list - Sign in</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="ok">Ok</string>
     <string name="api_error">Service unavailable</string>
     <string name="prompt_login">Login</string>
     <string name="prompt_name">Name</string>
-    <string name="prompt_recipe_name">Recipe Name</string>
+    <string name="prompt_recipe_name">List Name</string>
     <string name="prompt_password">Password</string>
     <string name="prompt_repassword">Repeat Password</string>
-    <string name="prompt_ingredients">Ingredients</string>
-    <string name="prompt_ingredient">Ingredient</string>
+    <string name="prompt_ingredients">Products</string>
+    <string name="prompt_ingredient">Products</string>
     <string name="prompt_directions">Directions</string>
     <string name="prompt_qtde">Qtde</string>
-    <string name="action_add_ingredient">Add Ingredient</string>
+    <string name="action_add_ingredient">Add Product</string>
     <string name="action_cancel">Cancel</string>
     <string name="action_edit">Edit</string>
     <string name="action_delete">Delete</string>
@@ -24,8 +24,8 @@
     <string name="action_registry">Registry</string>
     <string name="wrong_password">Wrong Password!</string>
     <string name="question_api_off">Service is not ok. Continue?</string>
-    <string name="question_confirme_delete">Confirma a exclusão desta receita?</string>
-    <string name="prompt_recipe_filter">Search Recipe</string>
+    <string name="question_confirme_delete">Confirma a exclusão deste produto?</string>
+    <string name="prompt_recipe_filter">Search List</string>
     <string name="prompt_developer">Developer</string>
     <string name="prompt_developer_name">Leandro Jorge</string>
     <string name="prompt_version">Version 1.0</string>

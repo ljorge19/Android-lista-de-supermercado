@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name"> </string>
-    <string name="title_activity_login">Receitas - Entrar</string>
+    <string name="app_name"> Lista SM </string>
+    <string name="title_activity_login">Lista SM - Entrar</string>
     <string name="yes">Sim</string>
     <string name="no">Não</string>
     <string name="ok">Ok</string>
@@ -11,7 +11,7 @@
     <string name="prompt_recipe_name">Nome da Lista</string>
     <string name="prompt_password">Senha</string>
     <string name="prompt_repassword">Repetir Senha</string>
-    <string name="prompt_ingredients">Ingredientes</string>
+    <string name="prompt_ingredients">Produtos</string>
     <string name="prompt_ingredient">Produto</string>
     <string name="prompt_directions">comentários</string>
     <string name="prompt_qtde">Qtde</string>
