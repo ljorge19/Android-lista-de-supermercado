@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Recipes</string>
+    <string name="app_name">Lista de supermercado</string>
     <string name="title_activity_login">Recipes - Sign in</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>

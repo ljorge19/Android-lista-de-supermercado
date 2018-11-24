@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/pie" />
+        app:srcCompat="@drawable/listasupermercado" />
 
     <TextView
         android:id="@+id/textView2"
