@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ReceitaFormActivity">
+    tools:context=".ui.ListaFormActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             </android.support.design.widget.TextInputLayout>
 
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/rvIngredientes"
+                android:id="@+id/rvProdutos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -37,7 +37,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btAddIngrediente"
+                    android:id="@+id/btAddProduto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/action_add_ingredient" />
@@ -45,7 +45,7 @@
             </LinearLayout>
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/tilReceitaPreparo"
+                android:id="@+id/tilComentario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 

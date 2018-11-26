@@ -6,14 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.leandro.lista.R
-import br.leandro.lista.model.Ingrediente
+import br.leandro.lista.model.Produto
 import kotlinx.android.synthetic.main.item_ingrediente_view.view.*
 
-class ListaIngredientesViewAdapter(private val ingredientes: List<Ingrediente>,
-                                   private val context: Context) : RecyclerView.Adapter<ListaIngredientesViewAdapter.ListaIngredientesViewHolder>() {
+class ListaProdutosViewAdapter(private val produto: List<Produto>,
+                               private val context: Context) : RecyclerView.Adapter<ListaProdutosViewAdapter.ListaIngredientesViewHolder>() {
 
     override fun getItemCount(): Int {
-        return ingredientes.size
+        return produto.size
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListaIngredientesViewHolder {
@@ -22,7 +22,7 @@ class ListaIngredientesViewAdapter(private val ingredientes: List<Ingrediente>,
     }
 
     override fun onBindViewHolder(holder: ListaIngredientesViewHolder, position: Int) {
-        val ingrediente = ingredientes[position]
+        val ingrediente = produto[position]
         holder?.let {
             it.bindView(ingrediente)
         }
@@ -30,9 +30,9 @@ class ListaIngredientesViewAdapter(private val ingredientes: List<Ingrediente>,
 
     class ListaIngredientesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        fun bindView(ingrediente: Ingrediente) {
-            itemView.tvIngredienteNome.text = ingrediente.nome
-            itemView.tvIngredienteQtde.text = ingrediente.qtde
+        fun bindView(produto: Produto) {
+            itemView.tvIngredienteNome.text = produto.nome
+            itemView.tvIngredienteQtde.text = produto.qtde
         }
     }
 }

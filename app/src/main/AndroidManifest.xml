@@ -26,8 +26,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.MainActivity" />
-        <activity android:name=".ui.ReceitaViewActivity" />
-        <activity android:name=".ui.ReceitaFormActivity" />
+        <activity android:name=".ui.ListaViewActivity" />
+        <activity android:name=".ui.ListaFormActivity" />
         <activity
             android:name=".ui.LoginActivity"
             android:label="@string/title_activity_login" />

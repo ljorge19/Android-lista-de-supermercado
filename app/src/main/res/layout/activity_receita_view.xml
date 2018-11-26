@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ReceitaViewActivity">
+    tools:context=".ui.ListaViewActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -44,10 +44,10 @@
                 android:textColor="@color/textColor"
                 android:textSize="10sp"
                 android:textStyle="bold"
-                tools:text="Modo de Preparo" />
+                tools:text="Comentario" />
 
             <TextView
-                android:id="@+id/tvReceitaPreparo"
+                android:id="@+id/tvListaComentario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/textColor"

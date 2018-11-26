@@ -7,12 +7,12 @@ import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
 import android.view.View
 import br.leandro.lista.R
-import br.leandro.lista.api.ReceitaAPI
+import br.leandro.lista.api.ListaAPI
 import br.leandro.lista.api.RetrofitClient
-import br.leandro.lista.model.Ingrediente
-import br.leandro.lista.model.Receita
+import br.leandro.lista.model.Produto
+import br.leandro.lista.model.Lista
 import br.leandro.lista.model.User
-import br.leandro.lista.ui.adapter.ListaReceitasAdapter
+import br.leandro.lista.ui.adapter.ListaProdutosAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.error.*
 import kotlinx.android.synthetic.main.loading.*
@@ -24,7 +24,7 @@ import java.io.Serializable
 class MainActivity : AppCompatActivity(), Serializable {
 
     private val reqCodeForm = 1
-    private var receitas : List<Receita>? = null
+    private var listas : List<Lista>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,13 +35,13 @@ class MainActivity : AppCompatActivity(), Serializable {
         Log.i("TAG", "Chegou aqui o user "+ user.name)
 
         btNovo.setOnClickListener {
-            var i = Intent(this, ReceitaFormActivity::class.java)
-            i.putExtra("receita", Receita(null, "", arrayListOf(Ingrediente("","")), ""))
+            var i = Intent(this, ListaFormActivity::class.java)
+            i.putExtra("lista", Lista(null, "", arrayListOf(Produto("","")), ""))
             startActivityForResult(i, reqCodeForm)
         }
 
-        tilReceitaFilter.editText?.setOnKeyListener { v, keyCode, event ->
-            filterReceitas()
+        tilListaFilter.editText?.setOnKeyListener { v, keyCode, event ->
+            filterListas()
             false
         }
 
@@ -62,15 +62,15 @@ class MainActivity : AppCompatActivity(), Serializable {
     }
 
     fun carregarDados() {
-        var api = RetrofitClient.getInstance().create(ReceitaAPI::class.java)
+        var api = RetrofitClient.getInstance().create(ListaAPI::class.java)
 
         loading.visibility = View.VISIBLE
 
-        api.listaReceitas().enqueue(object : Callback<List<Receita>> {
+        api.listaListas().enqueue(object : Callback<List<Lista>> {
 
-            override fun onResponse(call: Call<List<Receita>>?, response: Response<List<Receita>>?) {
+            override fun onResponse(call: Call<List<Lista>>?, response: Response<List<Lista>>?) {
                 if (response?.isSuccessful() == true) {
-                    setReceitas(response?.body())
+                    setListas(response?.body())
                 } else {
                     error.visibility = View.VISIBLE
                     tvMensagemErro.text = response?.errorBody()?.charStream()?.readText();
@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity(), Serializable {
                 loading.visibility = View.GONE
             }
 
-            override fun onFailure(call: Call<List<Receita>>?, t: Throwable?) {
+            override fun onFailure(call: Call<List<Lista>>?, t: Throwable?) {
                 Log.i("TAG", t?.message)
                 error.visibility = View.VISIBLE
                 tvMensagemErro.text = t?.message
@@ -88,27 +88,27 @@ class MainActivity : AppCompatActivity(), Serializable {
         })
     }
 
-    fun setReceitas(receitas: List<Receita>?) {
+    fun setListas(listas: List<Lista>?) {
 
-        this.receitas = receitas
-        loadReciclyView(this.receitas)
+        this.listas = listas
+        loadReciclyView(this.listas)
     }
 
-    fun loadReciclyView(receitas: List<Receita>?) {
-        receitas.let {
-            rvReceitas.adapter = ListaReceitasAdapter(receitas!!, this)
+    fun loadReciclyView(listas: List<Lista>?) {
+        listas.let {
+            rvListas.adapter = ListaProdutosAdapter(listas!!, this)
             val layoutManager = LinearLayoutManager(this)
-            rvReceitas.layoutManager = layoutManager
+            rvListas.layoutManager = layoutManager
         }
     }
 
-    fun filterReceitas() {
+    fun filterListas() {
         Log.i("TAG", "KeyListener")
-        var filter = tilReceitaFilter.editText?.text.toString()
+        var filter = tilListaFilter.editText?.text.toString()
         if (!filter.isNullOrBlank()) {
-            loadReciclyView(this.receitas?.filter{ r -> r.nome.contains(filter, true) })
+            loadReciclyView(this.listas?.filter{ r -> r.nome.contains(filter, true) })
         } else {
-            loadReciclyView(this.receitas)
+            loadReciclyView(this.listas)
         }
     }
 }

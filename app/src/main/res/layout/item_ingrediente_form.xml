@@ -8,7 +8,7 @@
     android:orientation="horizontal">
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/tilIngredienteNome"
+        android:id="@+id/tilProdutoNome"
         android:layout_width="208dp"
         android:layout_height="wrap_content"
         card_view:layout_constraintStart_toStartOf="parent"
@@ -21,14 +21,14 @@
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/tilIngredienteQtde"
+        android:id="@+id/tilProdutoQtde"
         android:layout_width="152dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         card_view:layout_constraintEnd_toEndOf="parent"
         card_view:layout_constraintHorizontal_bias="1.0"
-        card_view:layout_constraintStart_toEndOf="@+id/tilIngredienteNome"
+        card_view:layout_constraintStart_toEndOf="@+id/tilProdutoNome"
         card_view:layout_constraintTop_toTopOf="parent">
 
         <android.support.design.widget.TextInputEditText

@@ -7,17 +7,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.leandro.lista.R
-import br.leandro.lista.model.Receita
+import br.leandro.lista.model.Lista
 import kotlinx.android.synthetic.main.item_receita.view.*
 import android.content.Intent
-import br.leandro.lista.ui.ReceitaViewActivity
+import br.leandro.lista.ui.ListaViewActivity
 
 
-class ListaReceitasAdapter(private val receitas: List<Receita>,
-                           private val context: Context) : RecyclerView.Adapter<ListaReceitasAdapter.ListaReceitasHolder>() {
+class ListaProdutosAdapter(private val listas: List<Lista>,
+                           private val context: Context) : RecyclerView.Adapter<ListaProdutosAdapter.ListaReceitasHolder>() {
 
     override fun getItemCount(): Int {
-        return receitas.size
+        return listas.size
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListaReceitasHolder {
@@ -26,7 +26,7 @@ class ListaReceitasAdapter(private val receitas: List<Receita>,
     }
 
     override fun onBindViewHolder(holder: ListaReceitasHolder, position: Int) {
-        val receita = receitas[position]
+        val receita = listas[position]
         holder?.let {
             it.bindView(receita)
         }
@@ -34,22 +34,22 @@ class ListaReceitasAdapter(private val receitas: List<Receita>,
 
     class ListaReceitasHolder(itemView: View, val context: Context) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
 
-        private var receita: Receita? = null
+        private var lista: Lista? = null
 
         init {
             itemView.setOnClickListener(this)
         }
 
-        fun bindView(receita: Receita) {
-            this.receita = receita
-            itemView.tvReceita.text = receita.nome
-            itemView.tvReceitaId.text = receita.id
+        fun bindView(lista: Lista) {
+            this.lista = lista
+            itemView.tvReceita.text = lista.nome
+            itemView.tvReceitaId.text = lista.id
         }
 
         override fun onClick(itemView: View?) {
             Log.i("TAG", "Elemento "+ itemView?.tvReceita?.text + " clicado. ID: "+itemView?.tvReceitaId?.text)
-            var i = Intent(context, ReceitaViewActivity::class.java)
-            i.putExtra("receita", receita)
+            var i = Intent(context, ListaViewActivity::class.java)
+            i.putExtra("lista", lista)
             context.startActivity(i)
         }
     }
