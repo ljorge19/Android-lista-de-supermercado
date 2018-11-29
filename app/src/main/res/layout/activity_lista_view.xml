@@ -53,7 +53,7 @@
                 android:textColor="@color/textColor"
                 android:textSize="14sp"
                 android:inputType="textMultiLine"
-                tools:text="Bata todos os ingredientes na batedeira, leve ao forno por 30 minutos a 180 graus.Bata todos os ingredientes na batedeira, leve ao forno por 30 minutos a 180 graus." />
+                tools:text="comentario" />
 
 
             <LinearLayout

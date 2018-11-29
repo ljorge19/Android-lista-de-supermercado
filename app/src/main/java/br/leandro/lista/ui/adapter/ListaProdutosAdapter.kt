@@ -8,31 +8,31 @@ import android.view.View
 import android.view.ViewGroup
 import br.leandro.lista.R
 import br.leandro.lista.model.Lista
-import kotlinx.android.synthetic.main.item_receita.view.*
+import kotlinx.android.synthetic.main.item_lista.view.*
 import android.content.Intent
 import br.leandro.lista.ui.ListaViewActivity
 
 
 class ListaProdutosAdapter(private val listas: List<Lista>,
-                           private val context: Context) : RecyclerView.Adapter<ListaProdutosAdapter.ListaReceitasHolder>() {
+                           private val context: Context) : RecyclerView.Adapter<ListaProdutosAdapter.ListaListasHolder>() {
 
     override fun getItemCount(): Int {
         return listas.size
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListaReceitasHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_receita, parent, false)
-        return ListaReceitasHolder(view, context)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListaListasHolder {
+        val view = LayoutInflater.from(context).inflate(R.layout.item_lista, parent, false)
+        return ListaListasHolder(view, context)
     }
 
-    override fun onBindViewHolder(holder: ListaReceitasHolder, position: Int) {
+    override fun onBindViewHolder(holder: ListaListasHolder, position: Int) {
         val receita = listas[position]
         holder?.let {
             it.bindView(receita)
         }
     }
 
-    class ListaReceitasHolder(itemView: View, val context: Context) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
+    class ListaListasHolder(itemView: View, val context: Context) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
 
         private var lista: Lista? = null
 

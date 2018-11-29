@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import br.leandro.lista.R
 import br.leandro.lista.model.Produto
-import kotlinx.android.synthetic.main.item_ingrediente_view.view.*
+import kotlinx.android.synthetic.main.item_produro_view.view.*
 
 class ListaProdutosViewAdapter(private val produto: List<Produto>,
                                private val context: Context) : RecyclerView.Adapter<ListaProdutosViewAdapter.ListaIngredientesViewHolder>() {
@@ -17,7 +17,7 @@ class ListaProdutosViewAdapter(private val produto: List<Produto>,
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListaIngredientesViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_ingrediente_view, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.item_produro_view, parent, false)
         return ListaIngredientesViewHolder(view)
     }
 

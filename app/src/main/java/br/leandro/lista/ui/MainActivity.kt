@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity(), Serializable {
 
         val user = intent.extras.get("user") as User
 
-        Log.i("TAG", "Chegou aqui o user "+ user.name)
+        Log.i("TAG", "Chegou aqui o user "+ "user")
 
         btNovo.setOnClickListener {
             var i = Intent(this, ListaFormActivity::class.java)

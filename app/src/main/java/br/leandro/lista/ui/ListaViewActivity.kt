@@ -12,7 +12,7 @@ import br.leandro.lista.api.RetrofitClient
 import br.leandro.lista.model.Lista
 import br.leandro.lista.ui.adapter.ListaProdutosViewAdapter
 import br.leandro.lista.utils.MyDialog
-import kotlinx.android.synthetic.main.activity_receita_view.*
+import kotlinx.android.synthetic.main.activity_lista_view.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -25,7 +25,7 @@ class ListaViewActivity : AppCompatActivity() {
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_receita_view)
+        setContentView(R.layout.activity_lista_view)
 
         carregarDados()
 

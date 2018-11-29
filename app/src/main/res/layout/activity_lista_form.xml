@@ -16,7 +16,7 @@
             android:orientation="vertical">
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/tilReceitaNome"
+                android:id="@+id/tilListaNome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 

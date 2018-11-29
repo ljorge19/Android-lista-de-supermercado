@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import br.leandro.lista.R
 import br.leandro.lista.model.Produto
-import kotlinx.android.synthetic.main.item_ingrediente_form.view.*
+import kotlinx.android.synthetic.main.item_produto_form.view.*
 
 class ListaProdutosFormAdapter(private val Produtos: List<Produto>,
                                    private val context: Context) : RecyclerView.Adapter<ListaProdutosFormAdapter.ListaProdutosFormHolder>() {
@@ -19,7 +19,7 @@ class ListaProdutosFormAdapter(private val Produtos: List<Produto>,
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListaProdutosFormHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_ingrediente_form, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.item_produto_form, parent, false)
         views.add(view)
         return ListaProdutosFormHolder(view)
     }

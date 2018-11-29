@@ -12,8 +12,8 @@ import br.leandro.lista.model.Produto
 import br.leandro.lista.model.Lista
 import br.leandro.lista.ui.adapter.ListaProdutosFormAdapter
 import br.leandro.lista.utils.MyDialog
-import kotlinx.android.synthetic.main.activity_receita_form.*
-import kotlinx.android.synthetic.main.item_ingrediente_form.view.*
+import kotlinx.android.synthetic.main.activity_lista_form.*
+import kotlinx.android.synthetic.main.item_produto_form.view.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -25,7 +25,7 @@ class ListaFormActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_receita_form)
+        setContentView(R.layout.activity_lista_form)
 
         carregarDados()
         bindReceitaFields()
@@ -104,7 +104,7 @@ class ListaFormActivity : AppCompatActivity() {
 
     fun bindReceitaFields() {
         Log.i("TAG", "Binding fields")
-        tilReceitaNome.editText?.setText(lista.nome)
+        tilListaNome.editText?.setText(lista.nome)
         adapter = ListaProdutosFormAdapter(lista.produtos, this)
         rvProdutos.adapter = adapter
         val layoutManager = LinearLayoutManager(this)
@@ -115,7 +115,7 @@ class ListaFormActivity : AppCompatActivity() {
 
     fun bindFieldReceita() {
         Log.i("TAG", "Binding fields")
-        lista.nome = tilReceitaNome.editText?.text.toString()
+        lista.nome = tilListaNome.editText?.text.toString()
 
         lista.produtos.clear()
         adapter.views.forEach {
